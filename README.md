@@ -79,6 +79,13 @@
 
 ![赣州18县人口变化](figures/赣州18县人口增减.png)
 
-复现：`python -S scripts/prepare_data.py && python -S scripts/reproduce.py && python -S scripts/test_research.py`。新审计工作簿还需 `pip install requests beautifulsoup4 openpyxl`，随后运行 `python scripts/archive_sources.py && python scripts/audit_snapshots.py && python scripts/build_audited_workbook.py`。网页会变动，已归档快照与哈希用于固定本次证据版本。旧31表Excel仍依赖非通用 `artifact_tool`，作为阶段档案保留。
+复现：`python -S scripts/prepare_data.py && python -S scripts/reproduce.py && python -S scripts/test_research.py`。其中 `prepare_data.py` 现在只检查已提交的CSV（不会重写原始记录）。新审计工作簿还需 `pip install requests beautifulsoup4 openpyxl`，随后运行 `python scripts/archive_sources.py && python scripts/audit_snapshots.py && python scripts/build_audited_workbook.py`。网页会变动，已归档快照与哈希用于固定本次证据版本。旧31表Excel仍依赖非通用 `artifact_tool`，作为阶段档案保留。
 
 详见 [研究路线与验收](docs/roadmap.md)、[证据政策](docs/evidence-policy.md)、[核验缺口](docs/data-gaps.md)。
+
+## v0.2（进行中）：证据自动核验与县域城乡人口分析
+
+- [赣州18县2024—2025城乡常住人口结构重建](reports/2025_ganzhou_urban_rural.md)：18县合计人口-1.10万、估算城镇人口+11.36万、乡村人口-12.46万；不代表迁移规模。
+- `scripts/analyze_urban_rural.py`：纯标准库推算人口、县级误差界并导出CSV/JSON；`scripts/test_urban_rural.py`独立验证恒等式。
+- `scripts/archive_sources.py`：新抓取证据按SHA-256不可变保存，失败刷新不覆盖旧快照。
+- CI新增`evidence-audit`作业，在固定网页快照上离线执行逐条审计与Excel重建；`validate`作业检查人口衍生指标及档案不可变性。

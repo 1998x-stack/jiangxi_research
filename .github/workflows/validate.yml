@@ -28,6 +28,7 @@ jobs:
           python -S scripts/test_urban_rural.py
           python -S scripts/build_resident_policy_coverage.py
           python -S scripts/test_2025_county_fund_policy.py
+          python -S scripts/build_official_collection_queue.py
           python -S scripts/test_archive_sources.py
       - name: Publish derived population tables
         uses: actions/upload-artifact@v4
@@ -37,6 +38,7 @@ jobs:
             outputs/ganzhou_urban_rural_derived.csv
             outputs/ganzhou_urban_rural_summary.json
             outputs/resident_policy_coverage_100_counties_2025.csv
+            outputs/county_primary_evidence_request_queue_2025.csv
 
   evidence-audit:
     runs-on: ubuntu-latest

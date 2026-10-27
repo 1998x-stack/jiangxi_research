@@ -1,8 +1,9 @@
-"""Compare regenerated records to committed evidence independent of CSV BOM/newline differences."""
+"""Compare generated scientific records with committed outputs; tolerate only floating-point roundoff."""
 from pathlib import Path
 import csv
 import io
 import json
+import math
 import subprocess
 
 ROOT = Path(__file__).resolve().parent.parent
@@ -19,8 +20,16 @@ def committed_bytes(path):
     return subprocess.check_output(['git', 'show', 'HEAD:' + path], cwd=ROOT)
 
 def csv_records(raw):
-    text = raw.decode('utf-8-sig')
-    return list(csv.reader(io.StringIO(text, newline='')))
+    return list(csv.reader(io.StringIO(raw.decode('utf-8-sig'), newline='')))
+
+def close(a, b):
+    if isinstance(a, (int, float)) and not isinstance(a, bool) and isinstance(b, (int, float)) and not isinstance(b, bool):
+        return math.isclose(a, b, rel_tol=1e-12, abs_tol=1e-9)
+    if isinstance(a, dict) and isinstance(b, dict):
+        return a.keys() == b.keys() and all(close(a[k], b[k]) for k in a)
+    if isinstance(a, list) and isinstance(b, list):
+        return len(a) == len(b) and all(close(x,y) for x,y in zip(a,b))
+    return a == b
 
 for rel in CSV_FILES:
     actual = (ROOT / rel).read_bytes()
@@ -29,15 +38,11 @@ for rel in CSV_FILES:
 for rel in JSON_FILES:
     actual = json.loads((ROOT / rel).read_text(encoding='utf-8-sig'))
     old = json.loads(committed_bytes(rel).decode('utf-8-sig'))
-    if old != actual:
-        for k in old:
-            if old[k] != actual.get(k):
-                print('DIFF_KEY', k, 'original=', str(old[k])[:400], 'regenerated=', str(actual.get(k))[:400])
-        raise AssertionError(f'JSON metrics changed: {rel}')
+    assert close(old, actual), f'JSON metrics changed beyond floating-point roundoff: {rel}'
 
 for rel in TEXT_FILES:
     actual = (ROOT / rel).read_text(encoding='utf-8-sig').strip()
     old = committed_bytes(rel).decode('utf-8-sig').strip()
     assert old == actual, f'Text results changed: {rel}'
 
-print('PASS: tracked CSV records, JSON metrics and validation summary match committed evidence')
+print('PASS: tracked CSV records, numerically equivalent JSON and validation summary')

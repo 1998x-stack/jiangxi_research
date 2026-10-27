@@ -15,11 +15,10 @@ jobs:
           python-version: '3.11'
       - name: Syntax validation
         run: python -m compileall -q scripts
-      - name: Deterministic data preparation and analysis
+      - name: Rebuild data and analytics without optional third-party packages
         run: |
           python -S scripts/prepare_data.py
           python -S scripts/reproduce.py
           python -S scripts/test_research.py
-      - name: Check tracked data derivation
-        run: |
-          git diff --exit-code -- data/sources.csv data/observations_reviewed.csv outputs/analysis_results.json outputs/ganzhou_population_2024_2025.csv outputs/validation_summary.txt
+      - name: Verify stable scientific records (ignore BOM and line-ending normalization)
+        run: python scripts/verify_tracked_outputs.py

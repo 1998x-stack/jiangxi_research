@@ -89,3 +89,15 @@
 - `scripts/analyze_urban_rural.py`：纯标准库推算人口、县级误差界并导出CSV/JSON；`scripts/test_urban_rural.py`独立验证恒等式。
 - `scripts/archive_sources.py`：新抓取证据按SHA-256不可变保存，失败刷新不覆盖旧快照。
 - CI新增`evidence-audit`作业，在固定网页快照上离线执行逐条审计与Excel重建；`validate`作业检查人口衍生指标及档案不可变性。
+
+## 2025县级养老金补证与政策制度研究（第二批）
+
+- [县级基金原始证据、城乡居民基础养老金政策与冲突分析](reports/2025_county_fund_and_resident_pension_policy_evidence.md)
+- [2025县级社保基金执行数据：3县+1地级市](data/county_social_fund_execution_2025.csv)：16个严格区分**基金收入/支出**及县/市层级的数值；不冒充养老金发放额。
+- [2025基础养老金政策事件台账](data/resident_base_pension_policy_2025.csv)：赣州全市最低205/225、石城县地方+3、浮梁回溯及信丰/安远旧网页冲突；政策发布日期≠政策生效日期。
+- `scripts/build_resident_policy_coverage.py`：生成100县×两半年=200行政策覆盖矩阵，只确认赣州城市最低标准和石城正式县级加发；其余县级实际待遇保持缺失。
+- `scripts/review_semantic_evidence.py`：对65条历史“仅数字命中”添加指标词和制度归属上下文候选；**全部待人工复核，不自动签核**。
+- `scripts/build_audited_workbook.py`：在11表原工作簿上增加基金、政策、覆盖和证据候选等工作表；完整新版工作簿可从最新GitHub Actions的`source-evidence-audit` Artifact下载。
+- CI新增对应测试，确保基金与待遇不混账、县级未知标准不被填充、弱证据不被升格为人工验证。
+
+- [官方汇总资料申请模板及边界](docs/public_aggregation_data_request_template.md)：100县逐地缺口和待采集指标可由CI重建，默认全部未提交、未收到答复，不虚构政府回应。

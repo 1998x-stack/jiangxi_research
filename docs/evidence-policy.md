@@ -38,3 +38,11 @@
 ## 原始资料人工转录的维护方式
 
 `data/observations_reviewed.csv`、`data/sources.csv` 是 Git 跟踪的规范数据文件。`python scripts/prepare_data.py` 现在**只校验、绝不改写**，避免脚本中的旧常量覆盖研究人员修正后的事实。每次修改观察值应一并更新 `source_id`、引用定位、语义复核状态；随后运行复算、来源审计和CI，提交可审查的差异。旧版硬编码生成脚本可在Git历史中查阅，但不再是数据事实的来源。
+
+## 第二轮政策版本与语义验收的限制
+
+- `data/county_social_fund_execution_2025.csv` 的 `fund_income/fund_expenditure` 是**基金全项执行数**，绝不可直接并入基本养老金待遇金额比较。
+- `data/resident_base_pension_policy_2025.csv` 以`period_start/period_end`记政策适用期，另记`document_date`发布日期；遇追溯执行应核查补发记录。
+- 市级最低标准仅能作为市辖县的**法定下限**，不能视为县实际标准。石城县208/228获得县自身正式通知支持；其他17个赣州县区仅知道赣州市205/225城市政策下限。
+- `outputs/semantic_evidence_audit.csv` 中的`automated_status`属于检索位置与近邻文字的机器复核；全部`manual_semantic_signoff=pending`，不会伪装成已由第二研究者独立核验。
+- 正式基金决算、行政名录官方终版、独立双人复录及剩余县级最低政策未补齐前，不得做全省因果或份额推断。

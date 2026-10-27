@@ -1,0 +1,17 @@
+region_code,region_name,statistical_level,year,insurance_fund,indicator,value_wanyuan,precision_wanyuan,account_scope,source_id,source_url,source_locator,verification_status,caveat
+360726,安远县,县级,2025,城乡居民基本养老保险,fund_income,23897,1,2025预算执行,JF01,https://www.ay.gov.cn/ayxxxgk/czyjskr/202603/76094f623db3446c9c65be0bb1225bd7.shtml,2025年社会保险基金预算执行情况说明/A1,official_indexed_needs_archival,县级基金收入非退休人员养老金
+360726,安远县,县级,2025,城乡居民基本养老保险,fund_expenditure,14718,1,2025预算执行,JF01,https://www.ay.gov.cn/ayxxxgk/czyjskr/202603/76094f623db3446c9c65be0bb1225bd7.shtml,2025年社会保险基金预算执行情况说明/A1,official_indexed_needs_archival,基金总支出非单纯养老金
+360726,安远县,县级,2025,机关事业单位基本养老保险,fund_income,21551,1,2025预算执行,JF01,https://www.ay.gov.cn/ayxxxgk/czyjskr/202603/76094f623db3446c9c65be0bb1225bd7.shtml,2025年社会保险基金预算执行情况说明/A2,official_indexed_needs_archival,未包含企业养老全国统筹项目
+360726,安远县,县级,2025,机关事业单位基本养老保险,fund_expenditure,21070,1,2025预算执行,JF01,https://www.ay.gov.cn/ayxxxgk/czyjskr/202603/76094f623db3446c9c65be0bb1225bd7.shtml,2025年社会保险基金预算执行情况说明/A2,official_indexed_needs_archival,基金支出
+360222,浮梁县,县级,2025,城乡居民基本养老保险,fund_income,22100,100,2025预算执行,JF02,https://www.fuliang.gov.cn/xzf/czxx/czyjs/t1085174.shtml,社保基金预算执行情况/收入,official_page_context_read,2.21亿元转换万元
+360222,浮梁县,县级,2025,城乡居民基本养老保险,fund_expenditure,12200,100,2025预算执行,JF02,https://www.fuliang.gov.cn/xzf/czxx/czyjs/t1085174.shtml,社保基金预算执行情况/支出,official_page_context_read,1.22亿元转换万元
+360222,浮梁县,县级,2025,机关事业单位基本养老保险,fund_income,18500,100,2025预算执行,JF02,https://www.fuliang.gov.cn/xzf/czxx/czyjs/t1085174.shtml,社保基金预算执行情况/收入,official_page_context_read,1.85亿元转换万元
+360222,浮梁县,县级,2025,机关事业单位基本养老保险,fund_expenditure,18200,100,2025预算执行,JF02,https://www.fuliang.gov.cn/xzf/czxx/czyjs/t1085174.shtml,社保基金预算执行情况/支出,official_page_context_read,1.82亿元转换万元
+360429,湖口县,县级,2025,城乡居民基本养老保险,fund_income,19553,1,2025预算执行,JF03,https://www.hukou.gov.cn/czj/fdzdgknr/czxx/xbjczyjs/202602/t20260213_7166077.html,社保基金预算执行情况/收入,official_indexed_needs_archival,基金收入
+360429,湖口县,县级,2025,城乡居民基本养老保险,fund_expenditure,12646,1,2025预算执行,JF03,https://www.hukou.gov.cn/czj/fdzdgknr/czxx/xbjczyjs/202602/t20260213_7166077.html,社保基金预算执行情况/支出,official_indexed_needs_archival,原文社会保险基金总支出单位出现37134元明显排版异常;本项分险种万元清楚
+360429,湖口县,县级,2025,机关事业单位基本养老保险,fund_income,25972,1,2025预算执行,JF03,https://www.hukou.gov.cn/czj/fdzdgknr/czxx/xbjczyjs/202602/t20260213_7166077.html,社保基金预算执行情况/收入,official_indexed_needs_archival,基金收入
+360429,湖口县,县级,2025,机关事业单位基本养老保险,fund_expenditure,24488,1,2025预算执行,JF03,https://www.hukou.gov.cn/czj/fdzdgknr/czxx/xbjczyjs/202602/t20260213_7166077.html,社保基金预算执行情况/支出,official_indexed_needs_archival,基金支出
+360200,景德镇市,地级市,2025,城乡居民基本养老保险,fund_income,76500,100,2025全市预算执行,JF04,https://jdz.gov.cn/zwgk/fdzdgknr/czxx/yjsgk/t1079791.shtml,全市社会保险基金预算执行情况,official_page_context_read,市级汇总不是县级
+360200,景德镇市,地级市,2025,城乡居民基本养老保险,fund_expenditure,47100,100,2025全市预算执行,JF04,https://jdz.gov.cn/zwgk/fdzdgknr/czxx/yjsgk/t1079791.shtml,全市社会保险基金预算执行情况,official_page_context_read,4.71亿元
+360200,景德镇市,地级市,2025,机关事业单位基本养老保险,fund_income,162900,100,2025全市预算执行,JF04,https://jdz.gov.cn/zwgk/fdzdgknr/czxx/yjsgk/t1079791.shtml,全市社会保险基金预算执行情况,official_page_context_read,16.29亿元
+360200,景德镇市,地级市,2025,机关事业单位基本养老保险,fund_expenditure,156500,100,2025全市预算执行,JF04,https://jdz.gov.cn/zwgk/fdzdgknr/czxx/yjsgk/t1079791.shtml,全市社会保险基金预算执行情况,official_page_context_read,15.65亿元

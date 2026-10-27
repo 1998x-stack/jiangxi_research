@@ -126,6 +126,39 @@ sheet("县级覆盖与缺失", ["年份", "指标", "有值县数", "缺失县�
 for row in wb["县级覆盖与缺失"].iter_rows(min_row=2):
     row[4].number_format = "0%"
 
+# Second-round evidence additions. These remain separate from the 142 original observations.
+# A municipality's statutory pension FLOOR is not a county's observed actual benefit.
+fund_new = read(DATA / "county_social_fund_execution_2025.csv")
+policy_new = read(DATA / "resident_base_pension_policy_2025.csv")
+coverage_new = read(OUT / "resident_policy_coverage_100_counties_2025.csv")
+semantic_new = read(OUT / "semantic_evidence_audit.csv")
+sheet("2025社保基金执行", list(fund_new[0]), [
+    [float(r[k]) if k in ("value_wanyuan", "precision_wanyuan") else r[k] for k in fund_new[0]]
+    for r in fund_new
+])
+sheet("2025基础养老金政策", list(policy_new[0]), [
+    [float(r[k]) if k in ("monthly_basic_min_yuan", "local_add_over_city_yuan", "city_baseline_yuan") and r[k] else r[k]
+     for k in policy_new[0]]
+    for r in policy_new
+])
+sheet("县级政策覆盖200", list(coverage_new[0]), [
+    [float(r[k]) if k in ("enforceable_city_floor_yuan", "verified_county_enacted_floor_yuan", "county_additional_payment_yuan", "actual_county_minimum_yuan") and r[k] else r[k]
+     for k in coverage_new[0]]
+    for r in coverage_new
+])
+sheet("原65条语义候选", list(semantic_new[0]), [
+    [r[k] for k in semantic_new[0]]
+    for r in semantic_new
+])
+sheet("二轮补证说明", ["项目", "已知结果及严格边界"], [
+    ["县级基金", "安远、浮梁、湖口2025县级基金总支出数据+景德镇市汇总，不能等同三类基本养老金发放。"],
+    ["城市政策", "赣州2025年1-6月205元、7-12月225元是全市最低标准；不是所有县真实支付标准。"],
+    ["县级加发", "石城县县级自身最低标准208/228元，较市级最低增加3元/月，由县财政承担。"],
+    ["政策版本", "信丰、安远旧宣传页数值低于之后追溯实施的赣州最低标准，标记待经办核实。"],
+    ["证据机器审核", "旧65条仅数字命中记录已补上下文候选；人工semantic_signoff仍待完成。"],
+    ["观察样本", "三类养老金待遇金额齐全的县仍是2县，领取人数亦齐全仅1县；不作全省推算。"],
+])
+
 target = OUT / "江西县域社会保障_2025可复现审计工作簿.xlsx"
 wb.save(target)
 print(target)

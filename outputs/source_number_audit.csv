@@ -1,0 +1,143 @@
+﻿region_code,year,indicator_id,population_scope,source_id,registered_value,source_value_or_token,audit_result,source_locator,snapshot_sha256
+360823,2024,pension_enterprise_recipients_year_end,enterprise,S03,10779,10779,numeric_token_present,HTML text / character 4509,5a7b217e14a5e5cd78ad5fe84bdcbc95e4e865e5a4dcbf032c4b6e0ebafcab42
+360823,2024,pension_enterprise_annual_paid,enterprise,S03,26955.46,26955.46,numeric_token_present,HTML text / character 4521,5a7b217e14a5e5cd78ad5fe84bdcbc95e4e865e5a4dcbf032c4b6e0ebafcab42
+360823,2024,pension_enterprise_active_or_paid,enterprise,S03,24495,24495,numeric_token_present,HTML text / character 4484,5a7b217e14a5e5cd78ad5fe84bdcbc95e4e865e5a4dcbf032c4b6e0ebafcab42
+360823,2024,pension_enterprise_contribution,enterprise,S03,18642.9,18642.9,numeric_token_present,HTML text / character 4494,5a7b217e14a5e5cd78ad5fe84bdcbc95e4e865e5a4dcbf032c4b6e0ebafcab42
+360823,2024,pension_public_recipients_year_end,public,S03,2453,2453,numeric_token_present,HTML text / character 4585,5a7b217e14a5e5cd78ad5fe84bdcbc95e4e865e5a4dcbf032c4b6e0ebafcab42
+360823,2024,pension_public_annual_paid,public,S03,15209.48,15209.48,numeric_token_present,HTML text / character 4596,5a7b217e14a5e5cd78ad5fe84bdcbc95e4e865e5a4dcbf032c4b6e0ebafcab42
+360823,2024,pension_public_active_or_paid,public,S03,4977,4977,numeric_token_present,HTML text / character 4561,5a7b217e14a5e5cd78ad5fe84bdcbc95e4e865e5a4dcbf032c4b6e0ebafcab42
+360823,2024,pension_public_contribution,public,S03,11378.18,11378.18,numeric_token_present,HTML text / character 4570,5a7b217e14a5e5cd78ad5fe84bdcbc95e4e865e5a4dcbf032c4b6e0ebafcab42
+360823,2024,pension_resident_recipients_year_end,resident,S03,25995,25995,numeric_token_present,HTML text / character 4669,5a7b217e14a5e5cd78ad5fe84bdcbc95e4e865e5a4dcbf032c4b6e0ebafcab42
+360823,2024,pension_resident_annual_paid,resident,S03,5975.44,5975.44,numeric_token_present,HTML text / character 4680,5a7b217e14a5e5cd78ad5fe84bdcbc95e4e865e5a4dcbf032c4b6e0ebafcab42
+360823,2024,pension_resident_active_or_paid,resident,S03,33989,33989,numeric_token_present,HTML text / character 4643,5a7b217e14a5e5cd78ad5fe84bdcbc95e4e865e5a4dcbf032c4b6e0ebafcab42
+360823,2024,pension_resident_contribution,resident,S03,4208.58,4208.58,numeric_token_present,HTML text / character 4653,5a7b217e14a5e5cd78ad5fe84bdcbc95e4e865e5a4dcbf032c4b6e0ebafcab42
+360823,2025,pension_enterprise_recipients_year_end,enterprise,S02,11273,11273,numeric_token_present,HTML text / character 4747,5b10922df52b52fc1a3fad982ab538c4c4d67ffef3d859ef188f0232e392d0e7
+360823,2025,pension_enterprise_annual_paid,enterprise,S02,29571.25,29571.25,numeric_token_present,HTML text / character 4759,5b10922df52b52fc1a3fad982ab538c4c4d67ffef3d859ef188f0232e392d0e7
+360823,2025,pension_enterprise_active_or_paid,enterprise,S02,23914,23914,numeric_token_present,HTML text / character 4722,5b10922df52b52fc1a3fad982ab538c4c4d67ffef3d859ef188f0232e392d0e7
+360823,2025,pension_enterprise_contribution,enterprise,S02,20208.14,20208.14,numeric_token_present,HTML text / character 4732,5b10922df52b52fc1a3fad982ab538c4c4d67ffef3d859ef188f0232e392d0e7
+360823,2025,pension_public_recipients_year_end,public,S02,2508,2508,numeric_token_present,HTML text / character 4823,5b10922df52b52fc1a3fad982ab538c4c4d67ffef3d859ef188f0232e392d0e7
+360823,2025,pension_public_annual_paid,public,S02,16218.5,16218.5,numeric_token_present,HTML text / character 4834,5b10922df52b52fc1a3fad982ab538c4c4d67ffef3d859ef188f0232e392d0e7
+360823,2025,pension_public_active_or_paid,public,S02,4952,4952,numeric_token_present,HTML text / character 4799,5b10922df52b52fc1a3fad982ab538c4c4d67ffef3d859ef188f0232e392d0e7
+360823,2025,pension_public_contribution,public,S02,11723.52,11723.52,numeric_token_present,HTML text / character 4808,5b10922df52b52fc1a3fad982ab538c4c4d67ffef3d859ef188f0232e392d0e7
+360823,2025,pension_resident_recipients_year_end,resident,S02,27367,27367,numeric_token_present,HTML text / character 4906,5b10922df52b52fc1a3fad982ab538c4c4d67ffef3d859ef188f0232e392d0e7
+360823,2025,pension_resident_annual_paid,resident,S02,7910.83,7910.83,numeric_token_present,HTML text / character 4918,5b10922df52b52fc1a3fad982ab538c4c4d67ffef3d859ef188f0232e392d0e7
+360823,2025,pension_resident_active_or_paid,resident,S02,31028,31028,numeric_token_present,HTML text / character 4880,5b10922df52b52fc1a3fad982ab538c4c4d67ffef3d859ef188f0232e392d0e7
+360823,2025,pension_resident_contribution,resident,S02,5134.06,5134.06,numeric_token_present,HTML text / character 4890,5b10922df52b52fc1a3fad982ab538c4c4d67ffef3d859ef188f0232e392d0e7
+360823,2024,resident_population_year_end,常住人口,S03,146153,146153,numeric_token_present,HTML text / character 4082,5a7b217e14a5e5cd78ad5fe84bdcbc95e4e865e5a4dcbf032c4b6e0ebafcab42
+360823,2024,births,常住人口,S03,1188,1188,numeric_token_present,HTML text / character 4144,5a7b217e14a5e5cd78ad5fe84bdcbc95e4e865e5a4dcbf032c4b6e0ebafcab42
+360823,2024,deaths,常住人口,S03,1251,1251,numeric_token_present,HTML text / character 4162,5a7b217e14a5e5cd78ad5fe84bdcbc95e4e865e5a4dcbf032c4b6e0ebafcab42
+360823,2024,urban_resident_population,常住人口,S03,77415,77415,numeric_token_present,HTML text / character 4107,5a7b217e14a5e5cd78ad5fe84bdcbc95e4e865e5a4dcbf032c4b6e0ebafcab42
+360823,2024,hukou_population,户籍,S03,188734,188734,numeric_token_present,HTML text / character 4225,5a7b217e14a5e5cd78ad5fe84bdcbc95e4e865e5a4dcbf032c4b6e0ebafcab42
+360823,2025,resident_population_year_end,常住人口,S02,142688,142688,numeric_token_present,HTML text / character 4325,5b10922df52b52fc1a3fad982ab538c4c4d67ffef3d859ef188f0232e392d0e7
+360823,2025,births,常住人口,S02,931,931,numeric_token_present,HTML text / character 4387,5b10922df52b52fc1a3fad982ab538c4c4d67ffef3d859ef188f0232e392d0e7
+360823,2025,deaths,常住人口,S02,1048,1048,numeric_token_present,HTML text / character 4404,5b10922df52b52fc1a3fad982ab538c4c4d67ffef3d859ef188f0232e392d0e7
+360823,2025,urban_resident_population,常住人口,S02,76554,76554,numeric_token_present,HTML text / character 4350,5b10922df52b52fc1a3fad982ab538c4c4d67ffef3d859ef188f0232e392d0e7
+360823,2025,hukou_population,户籍,S02,187997,187997,numeric_token_present,HTML text / character 4468,5b10922df52b52fc1a3fad982ab538c4c4d67ffef3d859ef188f0232e392d0e7
+360821,2025,pension_enterprise_annual_paid,enterprise,S04,57981,57981,numeric_token_present,HTML text / character 5745,0b098126f1d4f8d966f8ab47d99d5f1f7577a475b5f222d3390bf61176c32b01
+360821,2025,pension_public_annual_paid,public,S04,32639,32639,numeric_token_present,HTML text / character 5769,0b098126f1d4f8d966f8ab47d99d5f1f7577a475b5f222d3390bf61176c32b01
+360821,2025,pension_resident_annual_paid,resident,S04,22880,22880,numeric_token_present,HTML text / character 5790,0b098126f1d4f8d966f8ab47d99d5f1f7577a475b5f222d3390bf61176c32b01
+360821,2025,new_urban_jobs,,S04,6041,6041,numeric_token_present,HTML text / character 5272,0b098126f1d4f8d966f8ab47d99d5f1f7577a475b5f222d3390bf61176c32b01
+360821,2025,urban_income,,S04,46935,46935,numeric_token_present,HTML text / character 5498,0b098126f1d4f8d966f8ab47d99d5f1f7577a475b5f222d3390bf61176c32b01
+360821,2025,rural_income,,S04,21265,21265,numeric_token_present,HTML text / character 5524,0b098126f1d4f8d966f8ab47d99d5f1f7577a475b5f222d3390bf61176c32b01
+360735,2025,resident_population_year_end,常住,S07,280500,28.05,numeric_token_present,HTML text / character 3208,a490422fd429eeb1dbc2450f4f14e1785ec940e8e920b6d54cb639fe23278ba6
+360735,2025,hukou_population,户籍,S07,327427,327427,numeric_token_present,HTML text / character 3139,a490422fd429eeb1dbc2450f4f14e1785ec940e8e920b6d54cb639fe23278ba6
+360735,2025,hukou_age_60plus,户籍,S07,61421,61421,numeric_token_present,HTML text / character 3170,a490422fd429eeb1dbc2450f4f14e1785ec940e8e920b6d54cb639fe23278ba6
+360735,2025,new_urban_jobs,,S07,1410,1410,numeric_token_present,HTML text / character 3473,a490422fd429eeb1dbc2450f4f14e1785ec940e8e920b6d54cb639fe23278ba6
+360735,2025,urban_income,城镇居民,S07,37550,37550,numeric_token_present,HTML text / character 3385,a490422fd429eeb1dbc2450f4f14e1785ec940e8e920b6d54cb639fe23278ba6
+360735,2025,rural_income,农村居民,S07,19075,19075,numeric_token_present,HTML text / character 3406,a490422fd429eeb1dbc2450f4f14e1785ec940e8e920b6d54cb639fe23278ba6
+360735,2025,general_public_budget_income,一般公共预算,S07,85425,85425,numeric_token_present,HTML text / character 792,a490422fd429eeb1dbc2450f4f14e1785ec940e8e920b6d54cb639fe23278ba6
+360735,2025,general_public_budget_expenditure,一般公共预算,S07,295697,295697,numeric_token_present,HTML text / character 864,a490422fd429eeb1dbc2450f4f14e1785ec940e8e920b6d54cb639fe23278ba6
+360735,2025,gdp,,S07,120.7736,1207736,numeric_token_present,HTML text / character 571,a490422fd429eeb1dbc2450f4f14e1785ec940e8e920b6d54cb639fe23278ba6
+360702,2024,resident_population_year_end,常住,S06,715200,71.52,table_cell_match,HTML table / 章贡区 / column 2,a6be1e1c39cedd3e71867cc93f3948b44b942055e9836114124acc95ff037289
+360702,2024,urbanization_rate,常住,S06,90.95,90.95,table_cell_match,HTML table / 章贡区 / column 4,a6be1e1c39cedd3e71867cc93f3948b44b942055e9836114124acc95ff037289
+360702,2025,resident_population_year_end,常住,S05,718000,71.80,table_cell_match,HTML table / 章贡区 / column 2,d946a7a33e097676c1722dbead1b8f957b9138701f496b6d3e006a820f64420a
+360702,2025,urbanization_rate,常住,S05,91.47,91.47,table_cell_match,HTML table / 章贡区 / column 4,d946a7a33e097676c1722dbead1b8f957b9138701f496b6d3e006a820f64420a
+360703,2024,resident_population_year_end,常住,S06,835200,83.52,table_cell_match,HTML table / 南康区 / column 2,a6be1e1c39cedd3e71867cc93f3948b44b942055e9836114124acc95ff037289
+360703,2024,urbanization_rate,常住,S06,62.99,62.99,table_cell_match,HTML table / 南康区 / column 4,a6be1e1c39cedd3e71867cc93f3948b44b942055e9836114124acc95ff037289
+360703,2025,resident_population_year_end,常住,S05,838200,83.82,table_cell_match,HTML table / 南康区 / column 2,d946a7a33e097676c1722dbead1b8f957b9138701f496b6d3e006a820f64420a
+360703,2025,urbanization_rate,常住,S05,64.61,64.61,table_cell_match,HTML table / 南康区 / column 4,d946a7a33e097676c1722dbead1b8f957b9138701f496b6d3e006a820f64420a
+360704,2024,resident_population_year_end,常住,S06,575900,57.59,table_cell_match,HTML table / 赣县区 / column 2,a6be1e1c39cedd3e71867cc93f3948b44b942055e9836114124acc95ff037289
+360704,2024,urbanization_rate,常住,S06,57.24,57.24,table_cell_match,HTML table / 赣县区 / column 4,a6be1e1c39cedd3e71867cc93f3948b44b942055e9836114124acc95ff037289
+360704,2025,resident_population_year_end,常住,S05,573400,57.34,table_cell_match,HTML table / 赣县区 / column 2,d946a7a33e097676c1722dbead1b8f957b9138701f496b6d3e006a820f64420a
+360704,2025,urbanization_rate,常住,S05,58.48,58.48,table_cell_match,HTML table / 赣县区 / column 4,d946a7a33e097676c1722dbead1b8f957b9138701f496b6d3e006a820f64420a
+360722,2024,resident_population_year_end,常住,S06,672300,67.23,table_cell_match,HTML table / 信丰县 / column 2,a6be1e1c39cedd3e71867cc93f3948b44b942055e9836114124acc95ff037289
+360722,2024,urbanization_rate,常住,S06,56.01,56.01,table_cell_match,HTML table / 信丰县 / column 4,a6be1e1c39cedd3e71867cc93f3948b44b942055e9836114124acc95ff037289
+360722,2025,resident_population_year_end,常住,S05,672400,67.24,table_cell_match,HTML table / 信丰县 / column 2,d946a7a33e097676c1722dbead1b8f957b9138701f496b6d3e006a820f64420a
+360722,2025,urbanization_rate,常住,S05,57.52,57.52,table_cell_match,HTML table / 信丰县 / column 4,d946a7a33e097676c1722dbead1b8f957b9138701f496b6d3e006a820f64420a
+360723,2024,resident_population_year_end,常住,S06,261300,26.13,table_cell_match,HTML table / 大余县 / column 2,a6be1e1c39cedd3e71867cc93f3948b44b942055e9836114124acc95ff037289
+360723,2024,urbanization_rate,常住,S06,57.04,57.04,table_cell_match,HTML table / 大余县 / column 4,a6be1e1c39cedd3e71867cc93f3948b44b942055e9836114124acc95ff037289
+360723,2025,resident_population_year_end,常住,S05,260700,26.07,table_cell_match,HTML table / 大余县 / column 2,d946a7a33e097676c1722dbead1b8f957b9138701f496b6d3e006a820f64420a
+360723,2025,urbanization_rate,常住,S05,58.48,58.48,table_cell_match,HTML table / 大余县 / column 4,d946a7a33e097676c1722dbead1b8f957b9138701f496b6d3e006a820f64420a
+360724,2024,resident_population_year_end,常住,S06,266900,26.69,table_cell_match,HTML table / 上犹县 / column 2,a6be1e1c39cedd3e71867cc93f3948b44b942055e9836114124acc95ff037289
+360724,2024,urbanization_rate,常住,S06,51.97,51.97,table_cell_match,HTML table / 上犹县 / column 4,a6be1e1c39cedd3e71867cc93f3948b44b942055e9836114124acc95ff037289
+360724,2025,resident_population_year_end,常住,S05,265700,26.57,table_cell_match,HTML table / 上犹县 / column 2,d946a7a33e097676c1722dbead1b8f957b9138701f496b6d3e006a820f64420a
+360724,2025,urbanization_rate,常住,S05,53.44,53.44,table_cell_match,HTML table / 上犹县 / column 4,d946a7a33e097676c1722dbead1b8f957b9138701f496b6d3e006a820f64420a
+360725,2024,resident_population_year_end,常住,S06,176300,17.63,table_cell_match,HTML table / 崇义县 / column 2,a6be1e1c39cedd3e71867cc93f3948b44b942055e9836114124acc95ff037289
+360725,2024,urbanization_rate,常住,S06,50.42,50.42,table_cell_match,HTML table / 崇义县 / column 4,a6be1e1c39cedd3e71867cc93f3948b44b942055e9836114124acc95ff037289
+360725,2025,resident_population_year_end,常住,S05,175700,17.57,table_cell_match,HTML table / 崇义县 / column 2,d946a7a33e097676c1722dbead1b8f957b9138701f496b6d3e006a820f64420a
+360725,2025,urbanization_rate,常住,S05,51.79,51.79,table_cell_match,HTML table / 崇义县 / column 4,d946a7a33e097676c1722dbead1b8f957b9138701f496b6d3e006a820f64420a
+360726,2024,resident_population_year_end,常住,S06,343300,34.33,table_cell_match,HTML table / 安远县 / column 2,a6be1e1c39cedd3e71867cc93f3948b44b942055e9836114124acc95ff037289
+360726,2024,urbanization_rate,常住,S06,49.92,49.92,table_cell_match,HTML table / 安远县 / column 4,a6be1e1c39cedd3e71867cc93f3948b44b942055e9836114124acc95ff037289
+360726,2025,resident_population_year_end,常住,S05,342200,34.22,table_cell_match,HTML table / 安远县 / column 2,d946a7a33e097676c1722dbead1b8f957b9138701f496b6d3e006a820f64420a
+360726,2025,urbanization_rate,常住,S05,51.51,51.51,table_cell_match,HTML table / 安远县 / column 4,d946a7a33e097676c1722dbead1b8f957b9138701f496b6d3e006a820f64420a
+360728,2024,resident_population_year_end,常住,S06,208500,20.85,table_cell_match,HTML table / 定南县 / column 2,a6be1e1c39cedd3e71867cc93f3948b44b942055e9836114124acc95ff037289
+360728,2024,urbanization_rate,常住,S06,66.9,66.90,table_cell_match,HTML table / 定南县 / column 4,a6be1e1c39cedd3e71867cc93f3948b44b942055e9836114124acc95ff037289
+360728,2025,resident_population_year_end,常住,S05,209700,20.97,table_cell_match,HTML table / 定南县 / column 2,d946a7a33e097676c1722dbead1b8f957b9138701f496b6d3e006a820f64420a
+360728,2025,urbanization_rate,常住,S05,68.13,68.13,table_cell_match,HTML table / 定南县 / column 4,d946a7a33e097676c1722dbead1b8f957b9138701f496b6d3e006a820f64420a
+360729,2024,resident_population_year_end,常住,S06,168100,16.81,table_cell_match,HTML table / 全南县 / column 2,a6be1e1c39cedd3e71867cc93f3948b44b942055e9836114124acc95ff037289
+360729,2024,urbanization_rate,常住,S06,58.16,58.16,table_cell_match,HTML table / 全南县 / column 4,a6be1e1c39cedd3e71867cc93f3948b44b942055e9836114124acc95ff037289
+360729,2025,resident_population_year_end,常住,S05,168000,16.80,table_cell_match,HTML table / 全南县 / column 2,d946a7a33e097676c1722dbead1b8f957b9138701f496b6d3e006a820f64420a
+360729,2025,urbanization_rate,常住,S05,59.53,59.53,table_cell_match,HTML table / 全南县 / column 4,d946a7a33e097676c1722dbead1b8f957b9138701f496b6d3e006a820f64420a
+360730,2024,resident_population_year_end,常住,S06,692900,69.29,table_cell_match,HTML table / 宁都县 / column 2,a6be1e1c39cedd3e71867cc93f3948b44b942055e9836114124acc95ff037289
+360730,2024,urbanization_rate,常住,S06,52.58,52.58,table_cell_match,HTML table / 宁都县 / column 4,a6be1e1c39cedd3e71867cc93f3948b44b942055e9836114124acc95ff037289
+360730,2025,resident_population_year_end,常住,S05,690500,69.05,table_cell_match,HTML table / 宁都县 / column 2,d946a7a33e097676c1722dbead1b8f957b9138701f496b6d3e006a820f64420a
+360730,2025,urbanization_rate,常住,S05,54.1,54.10,table_cell_match,HTML table / 宁都县 / column 4,d946a7a33e097676c1722dbead1b8f957b9138701f496b6d3e006a820f64420a
+360731,2024,resident_population_year_end,常住,S06,899600,89.96,table_cell_match,HTML table / 于都县 / column 2,a6be1e1c39cedd3e71867cc93f3948b44b942055e9836114124acc95ff037289
+360731,2024,urbanization_rate,常住,S06,47.38,47.38,table_cell_match,HTML table / 于都县 / column 4,a6be1e1c39cedd3e71867cc93f3948b44b942055e9836114124acc95ff037289
+360731,2025,resident_population_year_end,常住,S05,896200,89.62,table_cell_match,HTML table / 于都县 / column 2,d946a7a33e097676c1722dbead1b8f957b9138701f496b6d3e006a820f64420a
+360731,2025,urbanization_rate,常住,S05,48.9,48.90,table_cell_match,HTML table / 于都县 / column 4,d946a7a33e097676c1722dbead1b8f957b9138701f496b6d3e006a820f64420a
+360732,2024,resident_population_year_end,常住,S06,709800,70.98,table_cell_match,HTML table / 兴国县 / column 2,a6be1e1c39cedd3e71867cc93f3948b44b942055e9836114124acc95ff037289
+360732,2024,urbanization_rate,常住,S06,48.75,48.75,table_cell_match,HTML table / 兴国县 / column 4,a6be1e1c39cedd3e71867cc93f3948b44b942055e9836114124acc95ff037289
+360732,2025,resident_population_year_end,常住,S05,706300,70.63,table_cell_match,HTML table / 兴国县 / column 2,d946a7a33e097676c1722dbead1b8f957b9138701f496b6d3e006a820f64420a
+360732,2025,urbanization_rate,常住,S05,50.35,50.35,table_cell_match,HTML table / 兴国县 / column 4,d946a7a33e097676c1722dbead1b8f957b9138701f496b6d3e006a820f64420a
+360733,2024,resident_population_year_end,常住,S06,449300,44.93,table_cell_match,HTML table / 会昌县 / column 2,a6be1e1c39cedd3e71867cc93f3948b44b942055e9836114124acc95ff037289
+360733,2024,urbanization_rate,常住,S06,57.81,57.81,table_cell_match,HTML table / 会昌县 / column 4,a6be1e1c39cedd3e71867cc93f3948b44b942055e9836114124acc95ff037289
+360733,2025,resident_population_year_end,常住,S05,450800,45.08,table_cell_match,HTML table / 会昌县 / column 2,d946a7a33e097676c1722dbead1b8f957b9138701f496b6d3e006a820f64420a
+360733,2025,urbanization_rate,常住,S05,59.23,59.23,table_cell_match,HTML table / 会昌县 / column 4,d946a7a33e097676c1722dbead1b8f957b9138701f496b6d3e006a820f64420a
+360734,2024,resident_population_year_end,常住,S06,279700,27.97,table_cell_match,HTML table / 寻乌县 / column 2,a6be1e1c39cedd3e71867cc93f3948b44b942055e9836114124acc95ff037289
+360734,2024,urbanization_rate,常住,S06,54.24,54.24,table_cell_match,HTML table / 寻乌县 / column 4,a6be1e1c39cedd3e71867cc93f3948b44b942055e9836114124acc95ff037289
+360734,2025,resident_population_year_end,常住,S05,279700,27.97,table_cell_match,HTML table / 寻乌县 / column 2,d946a7a33e097676c1722dbead1b8f957b9138701f496b6d3e006a820f64420a
+360734,2025,urbanization_rate,常住,S05,55.69,55.69,table_cell_match,HTML table / 寻乌县 / column 4,d946a7a33e097676c1722dbead1b8f957b9138701f496b6d3e006a820f64420a
+360735,2024,resident_population_year_end,常住,S06,281200,28.12,table_cell_match,HTML table / 石城县 / column 2,a6be1e1c39cedd3e71867cc93f3948b44b942055e9836114124acc95ff037289
+360735,2024,urbanization_rate,常住,S06,51.76,51.76,table_cell_match,HTML table / 石城县 / column 4,a6be1e1c39cedd3e71867cc93f3948b44b942055e9836114124acc95ff037289
+360735,2025,resident_population_year_end,常住,S05,280500,28.05,table_cell_match,HTML table / 石城县 / column 2,d946a7a33e097676c1722dbead1b8f957b9138701f496b6d3e006a820f64420a
+360735,2025,urbanization_rate,常住,S05,53.34,53.34,table_cell_match,HTML table / 石城县 / column 4,d946a7a33e097676c1722dbead1b8f957b9138701f496b6d3e006a820f64420a
+360781,2024,resident_population_year_end,常住,S06,610600,61.06,table_cell_match,HTML table / 瑞金市 / column 2,a6be1e1c39cedd3e71867cc93f3948b44b942055e9836114124acc95ff037289
+360781,2024,urbanization_rate,常住,S06,53.69,53.69,table_cell_match,HTML table / 瑞金市 / column 4,a6be1e1c39cedd3e71867cc93f3948b44b942055e9836114124acc95ff037289
+360781,2025,resident_population_year_end,常住,S05,606700,60.67,table_cell_match,HTML table / 瑞金市 / column 2,d946a7a33e097676c1722dbead1b8f957b9138701f496b6d3e006a820f64420a
+360781,2025,urbanization_rate,常住,S05,55.13,55.13,table_cell_match,HTML table / 瑞金市 / column 4,d946a7a33e097676c1722dbead1b8f957b9138701f496b6d3e006a820f64420a
+360783,2024,resident_population_year_end,常住,S06,316300,31.63,table_cell_match,HTML table / 龙南市 / column 2,a6be1e1c39cedd3e71867cc93f3948b44b942055e9836114124acc95ff037289
+360783,2024,urbanization_rate,常住,S06,67.78,67.78,table_cell_match,HTML table / 龙南市 / column 4,a6be1e1c39cedd3e71867cc93f3948b44b942055e9836114124acc95ff037289
+360783,2025,resident_population_year_end,常住,S05,316700,31.67,table_cell_match,HTML table / 龙南市 / column 2,d946a7a33e097676c1722dbead1b8f957b9138701f496b6d3e006a820f64420a
+360783,2025,urbanization_rate,常住,S05,68.87,68.87,table_cell_match,HTML table / 龙南市 / column 4,d946a7a33e097676c1722dbead1b8f957b9138701f496b6d3e006a820f64420a
+360000,2025,resident_population_year_end,全省,S01,44740000,4474,numeric_token_present,HTML text / character 548,c66c9d5bf22e6369074d3d5433fbe08111b6cade7fadeba6e3d511279ed348cc
+360000,2025,urban_resident_population,全省,S01,28990000,2899,numeric_token_present,HTML text / character 573,c66c9d5bf22e6369074d3d5433fbe08111b6cade7fadeba6e3d511279ed348cc
+360000,2025,births,全省,S01,248000,24.8,numeric_token_present,HTML text / character 624,c66c9d5bf22e6369074d3d5433fbe08111b6cade7fadeba6e3d511279ed348cc
+360000,2025,deaths,全省,S01,337000,33.7,numeric_token_present,HTML text / character 645,c66c9d5bf22e6369074d3d5433fbe08111b6cade7fadeba6e3d511279ed348cc
+360000,2025,new_urban_jobs,全省,S01,485000,48.5,numeric_token_present,HTML text / character 737,c66c9d5bf22e6369074d3d5433fbe08111b6cade7fadeba6e3d511279ed348cc
+360000,2025,pension_employee_enrolled,全省,S01,15178000,1517.8,numeric_token_present,HTML text / character 4626,c66c9d5bf22e6369074d3d5433fbe08111b6cade7fadeba6e3d511279ed348cc
+360000,2025,pension_resident_enrolled,全省,S01,19030000,1903,numeric_token_present,HTML text / character 4661,c66c9d5bf22e6369074d3d5433fbe08111b6cade7fadeba6e3d511279ed348cc
+360000,2025,gdp,全省,S01,36020,36020,numeric_token_present,HTML text / character 376,c66c9d5bf22e6369074d3d5433fbe08111b6cade7fadeba6e3d511279ed348cc
+360000,2024,resident_population_year_end,全省,S01,45020000,,derived_not_literal,,c66c9d5bf22e6369074d3d5433fbe08111b6cade7fadeba6e3d511279ed348cc
+360000,2025,provident_contributors,全省,S08,3537700,,snapshot_unavailable,,
+360000,2025,provident_annual_deposit,全省,S08,728.52,,snapshot_unavailable,,
+360000,2025,provident_annual_withdrawal,全省,S08,503.42,,snapshot_unavailable,,
+360000,2025,provident_annual_loans,全省,S08,282.16,,snapshot_unavailable,,
+360000,2025,urban_nonprivate_avg_wage,对应城镇就业单位类型,S11,99446,99446,numeric_token_present,HTML text / character 252,0ef080dd034000f6e1e2ae9c1d6e109ec6bfa991a25a1763e8d2726ae9a11e6f
+360000,2025,urban_private_avg_wage,对应城镇就业单位类型,S11,57223,57223,numeric_token_present,HTML text / character 298,0ef080dd034000f6e1e2ae9c1d6e109ec6bfa991a25a1763e8d2726ae9a11e6f
+360000,2025,social_insurance_budget_executed_income,社保基金预算,S09,2735.8,2735.8,numeric_token_present,HTML text / character 2148,70d60f9cedd307b8a4e6ecbb6764eab791cca1b2e68233cf3a256d406bbda2bd
+360000,2025,social_insurance_budget_executed_expenditure,社保基金预算,S09,2603,2603,numeric_token_present,HTML text / character 2183,70d60f9cedd307b8a4e6ecbb6764eab791cca1b2e68233cf3a256d406bbda2bd
+360000,2025,social_insurance_budget_executed_balance,社保基金预算,S09,132.8,132.8,numeric_token_present,HTML text / character 2209,70d60f9cedd307b8a4e6ecbb6764eab791cca1b2e68233cf3a256d406bbda2bd
+360000,2025,social_insurance_budget_executed_rollover,社保基金预算,S09,2610,2610,numeric_token_present,HTML text / character 2222,70d60f9cedd307b8a4e6ecbb6764eab791cca1b2e68233cf3a256d406bbda2bd
+360000,2025,social_insurance_budget_provincial_final_income,社保基金预算,S10,1398.9,1398.9,numeric_token_present,HTML text / character 3425,a2bc6c1bffc2931a56300cfd94c366503a28e4f08f54390197449ed9ebd1f325
+360000,2025,social_insurance_budget_provincial_final_expenditure,社保基金预算,S10,1372.9,1372.9,numeric_token_present,HTML text / character 3462,a2bc6c1bffc2931a56300cfd94c366503a28e4f08f54390197449ed9ebd1f325

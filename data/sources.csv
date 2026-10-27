@@ -1,5 +1,5 @@
-source_id,title,publisher,geography,observation_year,source_type,url,grade,locator,publication_date,caveat
-S01,江西省2025年国民经济和社会发展统计公报,江西省统计局、国家统计局江西调查总队,江西省,2025,官方公报刊载,https://epaper.jxxw.com.cn/html/2026-03/27/content_7_88438.htm,A-官方发布渠道,综合、就业、社保章节,2026-03-27,无法下载原始网页文件；已在检索工具核对文字
+﻿source_id,title,publisher,geography,observation_year,source_type,url,grade,locator,publication_date,caveat
+S01,江西省2025年国民经济和社会发展统计公报,江西省统计局、国家统计局江西调查总队,江西省,2025,官方公报刊载,https://epaper.jxxw.com.cn/html/2026-03/27/content_7_88438.htm,A-官方发布渠道,综合、就业、社保章节,2026-03-27,报纸网页已封存；分项统计口径仍需逐项核对
 S02,峡江县2025年国民经济和社会发展统计公报,署名峡江县统计局,峡江县,2025,第三方统计公报转载,https://tjgb.hongheiku.com/xjtjgb/xj2020/73609.html,B-原文转载待官方终核,十、人口就业、人民生活和社会保障,2026-06-07,尚未取得可访问的2025县政府原文；数据为年度快报
 S03,峡江县2024年国民经济和社会发展统计公报,署名峡江县统计局,峡江县,2024,第三方转载＋官方搜索摘要,https://tjgb.hongheiku.com/xjtjgb/xj2020/65339.html,B-转载/局部官方确认,十、人口就业、人民生活和社会保障,2025-07-09,县政府2024版本链接 https://m.xiajiang.gov.cn/news-show-52834.html 访问超时
 S04,吉安县2025年国民经济和社会发展统计公报,署名吉安县相关统计部门,吉安县,2025,第三方平台公报全文,https://maptable.com/tjgb/2025/%E5%90%89%E5%AE%89%E5%B8%82/%E5%90%89%E5%AE%89%E5%8E%BF/report/ji-an-shi-ji-an-xian-2025-nian-guo-min-jing-ji-he-she-hui-fa-zhan-tong-ji-gong-bao,B-原文转载待官方终核,九、人民生活与社会保障,2026,未找到县政府原始发布全文；只有养老金金额、无分制度待遇领取人数

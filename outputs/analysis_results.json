@@ -9,14 +9,15 @@
     "pension_amounts_2025_counties": 2,
     "pension_amounts_and_people_2025_counties": 1,
     "ganzhou_counties_two_years": 18,
-    "government_origin_observations": 102,
+    "government_origin_observations": 101,
     "source_secondary_observations": 40,
+    "calculated_observations": 1,
     "observations_total": 142
   },
   "xiajiang_2024": {
     "year": 2024,
     "total_people_year_end": 39227.0,
-    "total_paid_wanyuan": 48140.38,
+    "total_paid_wanyuan": 48140.380000000005,
     "groups": [
       {
         "group": "enterprise",
@@ -27,7 +28,7 @@
         "active_paid": 24495.0,
         "contribution_wanyuan": 18642.9,
         "people_share": 0.2747852244627425,
-        "paid_share": 0.559934508202885,
+        "paid_share": 0.5599345082028849,
         "payer_to_receiver_proxy": 2.272474255496799
       },
       {
@@ -39,7 +40,7 @@
         "active_paid": 4977.0,
         "contribution_wanyuan": 11378.18,
         "people_share": 0.0625334590970505,
-        "paid_share": 0.31594017330149865,
+        "paid_share": 0.3159401733014986,
         "payer_to_receiver_proxy": 2.0289441500203833
       },
       {
@@ -51,7 +52,7 @@
         "active_paid": 33989.0,
         "contribution_wanyuan": 4208.58,
         "people_share": 0.662681316440207,
-        "paid_share": 0.12412531849561637,
+        "paid_share": 0.12412531849561634,
         "payer_to_receiver_proxy": 1.3075206770532795
       }
     ]

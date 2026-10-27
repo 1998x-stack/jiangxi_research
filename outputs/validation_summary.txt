@@ -2,8 +2,9 @@ counties_total: 100
 pension_amounts_2025_counties: 2
 pension_amounts_and_people_2025_counties: 1
 ganzhou_counties_two_years: 18
-government_origin_observations: 102
+government_origin_observations: 101
 source_secondary_observations: 40
+calculated_observations: 1
 observations_total: 142
 2025峡江机关事业金额占比: 30.20172222%
 2025峡江人口变动余项: -3348

@@ -60,10 +60,16 @@
 
 ## 阶段性成果下载（v0.1）
 
+- [2025可复现审计工作簿（11表，优先复核版本）](outputs/江西县域社会保障_2025可复现审计工作簿.xlsx)
+- [原始来源封存与独立复核增补](reports/2025_source_audit_and_review.md)
+- [逐条来源数字审计（142条）](outputs/source_number_audit.csv)
+- [原始网页快照与SHA-256清单](data/source_snapshot_manifest.csv)
+- [更新后的阶段研究报告 PDF](outputs/江西省县域社会分层与社会保障制度_2025实证研究报告.pdf)
+- [更新后的阶段研究报告 Markdown](outputs/江西省县域社会结构与社会保障制度实证研究_报告.md)
 - [2025严格核验版研究Excel（31表）](outputs/江西省县域社会保障实证研究_2025严格核验版.xlsx)
 - [实证研究报告 PDF](reports/2025_stage1_empirical_report.pdf)
 - [实证研究报告 Markdown](reports/2025_stage1_empirical_report.md)
-- [观察数据 CSV：142条](data/observations_reviewed.csv)
+- [观察数据 CSV：142条（A101、B40、计算估算C1）](data/observations_reviewed.csv)
 - [原始资料来源表：16项](data/sources.csv)
 - [江西100县区名录](data/regions_2025.csv)
 - [赣州18县2024—2025人口比较](outputs/ganzhou_population_2024_2025.csv)
@@ -73,6 +79,6 @@
 
 ![赣州18县人口变化](figures/赣州18县人口增减.png)
 
-复现：`python -S scripts/prepare_data.py && python -S scripts/reproduce.py && python -S scripts/test_research.py`；图形、Excel及PDF生成需要额外依赖与中文字体。其中 `artifact_tool` 并非GitHub Actions默认提供的公共Python包，所以CI目前只独立校验**核心数据和数学结果**，不声称在公共CI上自动重建31表Excel或PDF。已有Excel/PDF作为经本地验证的阶段性发行物归档。
+复现：`python -S scripts/prepare_data.py && python -S scripts/reproduce.py && python -S scripts/test_research.py`。新审计工作簿还需 `pip install requests beautifulsoup4 openpyxl`，随后运行 `python scripts/archive_sources.py && python scripts/audit_snapshots.py && python scripts/build_audited_workbook.py`。网页会变动，已归档快照与哈希用于固定本次证据版本。旧31表Excel仍依赖非通用 `artifact_tool`，作为阶段档案保留。
 
 详见 [研究路线与验收](docs/roadmap.md)、[证据政策](docs/evidence-policy.md)、[核验缺口](docs/data-gaps.md)。

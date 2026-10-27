@@ -88,7 +88,7 @@ cpfs.sort(key=lambda r:-r['monthly_per_payer_proxy_yuan'])
 # 证据质量检查。
 core_counties_complete=sum(all(get(c['region_code'],2025,'pension_'+g+'_annual_paid') is not None and get(c['region_code'],2025,'pension_'+g+'_recipients_year_end') is not None for g in ('enterprise','public','resident')) for c in counties)
 amounts_counties_complete=sum(all(get(c['region_code'],2025,'pension_'+g+'_annual_paid') is not None for g in ('enterprise','public','resident')) for c in counties)
-coverage=dict(counties_total=len(counties),pension_amounts_2025_counties=amounts_counties_complete,pension_amounts_and_people_2025_counties=core_counties_complete,ganzhou_counties_two_years=len(pops),government_origin_observations=sum(r['verification_status'].startswith('A') for r in obs),source_secondary_observations=sum(r['verification_status'].startswith('B') for r in obs),observations_total=len(obs))
+coverage=dict(counties_total=len(counties),pension_amounts_2025_counties=amounts_counties_complete,pension_amounts_and_people_2025_counties=core_counties_complete,ganzhou_counties_two_years=len(pops),government_origin_observations=sum(r['verification_status'].startswith('A') for r in obs),source_secondary_observations=sum(r['verification_status'].startswith('B') for r in obs),calculated_observations=sum(r['verification_status'].startswith('C') for r in obs),observations_total=len(obs))
 # 来源冲突：同指标/区域/年不同来源产生的数值差异。
 conflicts=[]
 for key,arr in idx.items():
@@ -97,7 +97,7 @@ for key,arr in idx.items():
 result=dict(meta={'base_year':2025,'methodology':'描述性研究，核查截至2026-10-27；不推断未公开县的养老金','warning':'县级2025养老金数据源属转载 B，尚未获官方原始版本；不形成全省养老金占比估计'},coverage=coverage,xiajiang_2024=p24,xiajiang_2025=p25,xiajiang_decomposition=decom,xiajiang_population=dict(year_end_pop_2024=pop24,year_end_pop_2025=pop25,change=netchange,births=births,deaths=deaths,natural_change=natural,unexplained_residual=residual),jian_an_shares=jian_shares,ganzhou_18_counties=pops,ganzhou_18_change_summary=dict(gain_count=sum(p['delta_people']>0 for p in pops),decline_count=sum(p['delta_people']<0 for p in pops),unchanged_count=sum(p['delta_people']==0 for p in pops),sum_2024=sum(p['pop_2024'] for p in pops),sum_2025=sum(p['pop_2025'] for p in pops),sum_delta=sum(p['delta_people'] for p in pops)),jiangxi_population=prov,jiangxi_wages=dict(nonprivate=get('360000',2025,'urban_nonprivate_avg_wage'),private=get('360000',2025,'urban_private_avg_wage')),provident_city_unverified=cpfs,source_conflicts=conflicts)
 with (OUT/'analysis_results.json').open('w',encoding='utf-8') as f:json.dump(result,f,ensure_ascii=False,indent=2)
 with (OUT/'ganzhou_population_2024_2025.csv').open('w',newline='',encoding='utf-8-sig') as f:
- w=csv.DictWriter(f,fieldnames=list(pops[0]));w.writeheader();w.writerows(pops)
+ w=csv.DictWriter(f,fieldnames=list(pops[0]),lineterminator='\n');w.writeheader();w.writerows(pops)
 # 简要机器报告：不把中间层证据误表示为官方已核。
 with (OUT/'validation_summary.txt').open('w',encoding='utf-8') as f:
  for k,v in coverage.items():f.write(f'{k}: {v}\n')
@@ -109,8 +109,11 @@ try:
  matplotlib.use('Agg')
  import matplotlib.pyplot as plt
  from matplotlib import font_manager
- font_manager.fontManager.addfont('/usr/share/fonts/truetype/arphic-gbsn00lp/gbsn00lp.ttf')
- plt.rcParams['font.family']=[font_manager.FontProperties(fname='/usr/share/fonts/truetype/arphic-gbsn00lp/gbsn00lp.ttf').get_name()]
+ import subprocess
+ font_path=subprocess.check_output(['fc-match','-f','%{file}','Droid Sans Fallback'],text=True).strip()
+ if Path(font_path).is_file():
+  font_manager.fontManager.addfont(font_path)
+  plt.rcParams['font.family']=['DejaVu Sans',font_manager.FontProperties(fname=font_path).get_name()]
  plt.rcParams['axes.unicode_minus']=False
  fig,ax=plt.subplots(figsize=(9.0,4.2))
  cats=[r['name'] for r in p24['groups']]

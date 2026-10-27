@@ -4,7 +4,7 @@ import csv, json
 BASE=Path(__file__).resolve().parent.parent
 DATA=BASE/'data'
 SOURCES=[
-('S01','江西省2025年国民经济和社会发展统计公报','江西省统计局、国家统计局江西调查总队','江西省','2025','官方公报刊载','https://epaper.jxxw.com.cn/html/2026-03/27/content_7_88438.htm','A-官方发布渠道','综合、就业、社保章节','2026-03-27','无法下载原始网页文件；已在检索工具核对文字'),
+('S01','江西省2025年国民经济和社会发展统计公报','江西省统计局、国家统计局江西调查总队','江西省','2025','官方公报刊载','https://epaper.jxxw.com.cn/html/2026-03/27/content_7_88438.htm','A-官方发布渠道','综合、就业、社保章节','2026-03-27','报纸网页已封存；分项统计口径仍需逐项核对'),
 ('S02','峡江县2025年国民经济和社会发展统计公报','署名峡江县统计局','峡江县','2025','第三方统计公报转载','https://tjgb.hongheiku.com/xjtjgb/xj2020/73609.html','B-原文转载待官方终核','十、人口就业、人民生活和社会保障','2026-06-07','尚未取得可访问的2025县政府原文；数据为年度快报'),
 ('S03','峡江县2024年国民经济和社会发展统计公报','署名峡江县统计局','峡江县','2024','第三方转载＋官方搜索摘要','https://tjgb.hongheiku.com/xjtjgb/xj2020/65339.html','B-转载/局部官方确认','十、人口就业、人民生活和社会保障','2025-07-09','县政府2024版本链接 https://m.xiajiang.gov.cn/news-show-52834.html 访问超时'),
 ('S04','吉安县2025年国民经济和社会发展统计公报','署名吉安县相关统计部门','吉安县','2025','第三方平台公报全文','https://maptable.com/tjgb/2025/%E5%90%89%E5%AE%89%E5%B8%82/%E5%90%89%E5%AE%89%E5%8E%BF/report/ji-an-shi-ji-an-xian-2025-nian-guo-min-jing-ji-he-she-hui-fa-zhan-tong-ji-gong-bao','B-原文转载待官方终核','九、人民生活与社会保障','2026','未找到县政府原始发布全文；只有养老金金额、无分制度待遇领取人数'),
@@ -22,10 +22,10 @@ SOURCES=[
 ('S16','江西省行政区划（2025年）','区划地名网','江西省','2025','第三方按年度行政名录','https://xzqh.org/show/china/36/2025.html','B-行政区划二手索引','2025末11市100县级单位','2025','2025数目与既有100县表相符；民政部为最终编码源'),
 ]
 with (DATA/'sources.csv').open('w',encoding='utf-8-sig',newline='') as f:
- w=csv.writer(f);w.writerow(['source_id','title','publisher','geography','observation_year','source_type','url','grade','locator','publication_date','caveat']);w.writerows(SOURCES)
+ w=csv.writer(f,lineterminator='\n');w.writerow(['source_id','title','publisher','geography','observation_year','source_type','url','grade','locator','publication_date','caveat']);w.writerows(SOURCES)
 F=[]
 def add(code,name,level,year,indicator,value,unit,sid,population='',status='',note=''):
- F.append([code,name,level,year,indicator,value,unit,population,sid,status or ('A_政府原文' if sid in ['S05','S06','S07','S09','S10','S14'] else 'B_官方稿或转载'),'未备份原始网页；依据检索核对','',note])
+ F.append([code,name,level,year,indicator,value,unit,population,sid,status or ('A_政府原文' if sid in ['S05','S06','S07','S09','S10','S14'] else 'B_官方稿或转载'),'归档状态与SHA-256见source_snapshot_manifest.csv；口径核实见source_number_audit.csv','',note])
 # 连续两年峡江数据：2025县统计局署名转载、2024版本官方搜索摘要+转载。
 for year,sid,groups in [
  (2024,'S03', [('enterprise',10779,26955.46,24495,18642.90),('public',2453,15209.48,4977,11378.18),('resident',25995,5975.44,33989,4208.58)]),
@@ -67,7 +67,7 @@ for county,p24,p25,u24,u25 in city_rows:
 # 江西省宏观数据，省级与县级分层。
 for k,v,u in [('resident_population_year_end',44740000,'人'),('urban_resident_population',28990000,'人'),('births',248000,'人'),('deaths',337000,'人'),('new_urban_jobs',485000,'人'),('pension_employee_enrolled',15178000,'人'),('pension_resident_enrolled',19030000,'人'),('gdp',36020,'亿元')]:
  add('360000','江西省','省',2025,k,v,u,'S01','全省','A_官方公报刊载','参保≠领取待遇；GDP不等于财政支出')
-add('360000','江西省','省',2024,'resident_population_year_end',45020000,'人','S01','全省','A_官方公报刊载','据2025年末4474万人、同比减少28万人反推（比较基期）')
+add('360000','江西省','省',2024,'resident_population_year_end',45020000,'人','S01','全省','C_计算估算','据2025年末4474万人、同比减少28万人反推（比较基期）')
 for k,v in [('provident_contributors',3537700),('provident_annual_deposit',728.52),('provident_annual_withdrawal',503.42),('provident_annual_loans',282.16)]:
  add('360000','江西省','省',2025,k,v,'人' if k=='provident_contributors' else '亿元','S08','全省','A_官方部门发布','公积金并非养老保险，2025年报总体指标')
 for k,v in [('urban_nonprivate_avg_wage',99446),('urban_private_avg_wage',57223)]:
@@ -75,5 +75,5 @@ for k,v in [('urban_nonprivate_avg_wage',99446),('urban_private_avg_wage',57223)
 for k,v,level,sid in [('social_insurance_budget_executed_income',2735.8,'全省','S09'),('social_insurance_budget_executed_expenditure',2603,'全省','S09'),('social_insurance_budget_executed_balance',132.8,'全省','S09'),('social_insurance_budget_executed_rollover',2610,'全省','S09'),('social_insurance_budget_provincial_final_income',1398.9,'省级','S10'),('social_insurance_budget_provincial_final_expenditure',1372.9,'省级','S10')]:
  add('360000','江西省',level,2025,k,v,'亿元',sid,'社保基金预算','A_人大/财政公开','包含多险种，2025全省执行与省级决算绝不可直接做差')
 with (DATA/'observations_reviewed.csv').open('w',encoding='utf-8-sig',newline='') as f:
- w=csv.writer(f);w.writerow(['region_code','region_name','level','year','indicator_id','value','unit','population_scope','source_id','verification_status','snapshot_status','page_number','caveat']);w.writerows(F)
+ w=csv.writer(f,lineterminator='\n');w.writerow(['region_code','region_name','level','year','indicator_id','value','unit','population_scope','source_id','verification_status','snapshot_status','page_number','caveat']);w.writerows(F)
 print('sources',len(SOURCES),'facts',len(F),'gz counties',len(city_rows))

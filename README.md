@@ -56,3 +56,23 @@
 ## 项目边界
 
 本研究不处理可识别个人的社保账户、家庭金融数据，也不使用未经授权的敏感微观资料。
+
+
+## 阶段性成果下载（v0.1）
+
+- [2025严格核验版研究Excel（31表）](outputs/江西省县域社会保障实证研究_2025严格核验版.xlsx)
+- [实证研究报告 PDF](reports/2025_stage1_empirical_report.pdf)
+- [实证研究报告 Markdown](reports/2025_stage1_empirical_report.md)
+- [观察数据 CSV：142条](data/observations_reviewed.csv)
+- [原始资料来源表：16项](data/sources.csv)
+- [江西100县区名录](data/regions_2025.csv)
+- [赣州18县2024—2025人口比较](outputs/ganzhou_population_2024_2025.csv)
+- [既有阶段基线工作簿（未经全部终核）](data/上一版基础数据库.xlsx)
+
+![峡江两年养老金占比](figures/峡江养老金金额占比_两年对比.png)
+
+![赣州18县人口变化](figures/赣州18县人口增减.png)
+
+复现：`python -S scripts/prepare_data.py && python -S scripts/reproduce.py && python -S scripts/test_research.py`；图形、Excel及PDF生成需要额外依赖与中文字体。其中 `artifact_tool` 并非GitHub Actions默认提供的公共Python包，所以CI目前只独立校验**核心数据和数学结果**，不声称在公共CI上自动重建31表Excel或PDF。已有Excel/PDF作为经本地验证的阶段性发行物归档。
+
+详见 [研究路线与验收](docs/roadmap.md)、[证据政策](docs/evidence-policy.md)、[核验缺口](docs/data-gaps.md)。

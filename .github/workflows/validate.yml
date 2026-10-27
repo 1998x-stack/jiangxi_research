@@ -1,0 +1,25 @@
+name: Research data reproducibility
+on:
+  push:
+  pull_request:
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Syntax validation
+        run: python -m compileall -q scripts
+      - name: Deterministic data preparation and analysis
+        run: |
+          python -S scripts/prepare_data.py
+          python -S scripts/reproduce.py
+          python -S scripts/test_research.py
+      - name: Check tracked data derivation
+        run: |
+          git diff --exit-code -- data/sources.csv data/observations_reviewed.csv outputs/analysis_results.json outputs/ganzhou_population_2024_2025.csv outputs/validation_summary.txt

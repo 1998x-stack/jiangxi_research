@@ -1,0 +1,438 @@
+{
+  "meta": {
+    "base_year": 2025,
+    "methodology": "描述性研究，核查截至2026-10-27；不推断未公开县的养老金",
+    "warning": "县级2025养老金数据源属转载 B，尚未获官方原始版本；不形成全省养老金占比估计"
+  },
+  "coverage": {
+    "counties_total": 100,
+    "pension_amounts_2025_counties": 2,
+    "pension_amounts_and_people_2025_counties": 1,
+    "ganzhou_counties_two_years": 18,
+    "government_origin_observations": 102,
+    "source_secondary_observations": 40,
+    "observations_total": 142
+  },
+  "xiajiang_2024": {
+    "year": 2024,
+    "total_people_year_end": 39227.0,
+    "total_paid_wanyuan": 48140.38,
+    "groups": [
+      {
+        "group": "enterprise",
+        "name": "企业职工",
+        "recipients_year_end": 10779.0,
+        "annual_paid_wanyuan": 26955.46,
+        "monthly_proxy_yuan": 2083.948727463896,
+        "active_paid": 24495.0,
+        "contribution_wanyuan": 18642.9,
+        "people_share": 0.2747852244627425,
+        "paid_share": 0.559934508202885,
+        "payer_to_receiver_proxy": 2.272474255496799
+      },
+      {
+        "group": "public",
+        "name": "机关事业",
+        "recipients_year_end": 2453.0,
+        "annual_paid_wanyuan": 15209.48,
+        "monthly_proxy_yuan": 5166.965620328849,
+        "active_paid": 4977.0,
+        "contribution_wanyuan": 11378.18,
+        "people_share": 0.0625334590970505,
+        "paid_share": 0.31594017330149865,
+        "payer_to_receiver_proxy": 2.0289441500203833
+      },
+      {
+        "group": "resident",
+        "name": "城乡居民",
+        "recipients_year_end": 25995.0,
+        "annual_paid_wanyuan": 5975.44,
+        "monthly_proxy_yuan": 191.55735077258444,
+        "active_paid": 33989.0,
+        "contribution_wanyuan": 4208.58,
+        "people_share": 0.662681316440207,
+        "paid_share": 0.12412531849561637,
+        "payer_to_receiver_proxy": 1.3075206770532795
+      }
+    ]
+  },
+  "xiajiang_2025": {
+    "year": 2025,
+    "total_people_year_end": 41148.0,
+    "total_paid_wanyuan": 53700.58,
+    "groups": [
+      {
+        "group": "enterprise",
+        "name": "企业职工",
+        "recipients_year_end": 11273.0,
+        "annual_paid_wanyuan": 29571.25,
+        "monthly_proxy_yuan": 2185.9938200419883,
+        "active_paid": 23914.0,
+        "contribution_wanyuan": 20208.14,
+        "people_share": 0.27396228249246624,
+        "paid_share": 0.5506690989184847,
+        "payer_to_receiver_proxy": 2.1213519027765457
+      },
+      {
+        "group": "public",
+        "name": "机关事业",
+        "recipients_year_end": 2508.0,
+        "annual_paid_wanyuan": 16218.5,
+        "monthly_proxy_yuan": 5388.9221158958,
+        "active_paid": 4952.0,
+        "contribution_wanyuan": 11723.52,
+        "people_share": 0.060950714494021584,
+        "paid_share": 0.30201722216035654,
+        "payer_to_receiver_proxy": 1.974481658692185
+      },
+      {
+        "group": "resident",
+        "name": "城乡居民",
+        "recipients_year_end": 27367.0,
+        "annual_paid_wanyuan": 7910.83,
+        "monthly_proxy_yuan": 240.8871390117051,
+        "active_paid": 31028.0,
+        "contribution_wanyuan": 5134.06,
+        "people_share": 0.6650870030135122,
+        "paid_share": 0.14731367892115876,
+        "payer_to_receiver_proxy": 1.133774253663171
+      }
+    ]
+  },
+  "xiajiang_decomposition": [
+    {
+      "group": "enterprise",
+      "annual_paid_growth_wanyuan": 2615.790000000001,
+      "year_end_number_component_wanyuan": 1265.610971080744,
+      "amount_per_year_end_person_component_wanyuan": 1350.179028919257,
+      "method": "对称精确恒等分解（并非因果贡献，年末人数代理）"
+    },
+    {
+      "group": "public",
+      "annual_paid_growth_wanyuan": 1009.0200000000004,
+      "year_end_number_component_wanyuan": 348.3442952954134,
+      "amount_per_year_end_person_component_wanyuan": 660.6757047045875,
+      "method": "对称精确恒等分解（并非因果贡献，年末人数代理）"
+    },
+    {
+      "group": "resident",
+      "annual_paid_growth_wanyuan": 1935.3900000000003,
+      "year_end_number_component_wanyuan": 355.9883039904272,
+      "amount_per_year_end_person_component_wanyuan": 1579.401696009574,
+      "method": "对称精确恒等分解（并非因果贡献，年末人数代理）"
+    }
+  ],
+  "xiajiang_population": {
+    "year_end_pop_2024": 146153.0,
+    "year_end_pop_2025": 142688.0,
+    "change": -3465.0,
+    "births": 931.0,
+    "deaths": 1048.0,
+    "natural_change": -117.0,
+    "unexplained_residual": -3348.0
+  },
+  "jian_an_shares": {
+    "enterprise": 0.5108458149779735,
+    "public": 0.287568281938326,
+    "resident": 0.20158590308370045
+  },
+  "ganzhou_18_counties": [
+    {
+      "region_code": "360702",
+      "county": "章贡区",
+      "pop_2024": 715200.0,
+      "pop_2025": 718000.0,
+      "delta_people": 2800.0,
+      "change_rate": 0.0039149888143176735,
+      "urbanization_2024": 90.95,
+      "urbanization_2025": 91.47,
+      "urbanization_delta_pp": 0.519999999999996
+    },
+    {
+      "region_code": "360703",
+      "county": "南康区",
+      "pop_2024": 835200.0,
+      "pop_2025": 838200.0,
+      "delta_people": 3000.0,
+      "change_rate": 0.0035919540229885057,
+      "urbanization_2024": 62.99,
+      "urbanization_2025": 64.61,
+      "urbanization_delta_pp": 1.6199999999999974
+    },
+    {
+      "region_code": "360704",
+      "county": "赣县区",
+      "pop_2024": 575900.0,
+      "pop_2025": 573400.0,
+      "delta_people": -2500.0,
+      "change_rate": -0.004341031429067547,
+      "urbanization_2024": 57.24,
+      "urbanization_2025": 58.48,
+      "urbanization_delta_pp": 1.2399999999999949
+    },
+    {
+      "region_code": "360781",
+      "county": "瑞金市",
+      "pop_2024": 610600.0,
+      "pop_2025": 606700.0,
+      "delta_people": -3900.0,
+      "change_rate": -0.006387160170324271,
+      "urbanization_2024": 53.69,
+      "urbanization_2025": 55.13,
+      "urbanization_delta_pp": 1.4400000000000048
+    },
+    {
+      "region_code": "360783",
+      "county": "龙南市",
+      "pop_2024": 316300.0,
+      "pop_2025": 316700.0,
+      "delta_people": 400.0,
+      "change_rate": 0.001264622194119507,
+      "urbanization_2024": 67.78,
+      "urbanization_2025": 68.87,
+      "urbanization_delta_pp": 1.0900000000000034
+    },
+    {
+      "region_code": "360722",
+      "county": "信丰县",
+      "pop_2024": 672300.0,
+      "pop_2025": 672400.0,
+      "delta_people": 100.0,
+      "change_rate": 0.00014874312063067083,
+      "urbanization_2024": 56.01,
+      "urbanization_2025": 57.52,
+      "urbanization_delta_pp": 1.5100000000000051
+    },
+    {
+      "region_code": "360723",
+      "county": "大余县",
+      "pop_2024": 261300.0,
+      "pop_2025": 260700.0,
+      "delta_people": -600.0,
+      "change_rate": -0.002296211251435132,
+      "urbanization_2024": 57.04,
+      "urbanization_2025": 58.48,
+      "urbanization_delta_pp": 1.4399999999999977
+    },
+    {
+      "region_code": "360724",
+      "county": "上犹县",
+      "pop_2024": 266900.0,
+      "pop_2025": 265700.0,
+      "delta_people": -1200.0,
+      "change_rate": -0.004496065942300487,
+      "urbanization_2024": 51.97,
+      "urbanization_2025": 53.44,
+      "urbanization_delta_pp": 1.4699999999999989
+    },
+    {
+      "region_code": "360725",
+      "county": "崇义县",
+      "pop_2024": 176300.0,
+      "pop_2025": 175700.0,
+      "delta_people": -600.0,
+      "change_rate": -0.003403289846851957,
+      "urbanization_2024": 50.42,
+      "urbanization_2025": 51.79,
+      "urbanization_delta_pp": 1.3699999999999974
+    },
+    {
+      "region_code": "360726",
+      "county": "安远县",
+      "pop_2024": 343300.0,
+      "pop_2025": 342200.0,
+      "delta_people": -1100.0,
+      "change_rate": -0.003204194581998252,
+      "urbanization_2024": 49.92,
+      "urbanization_2025": 51.51,
+      "urbanization_delta_pp": 1.5899999999999963
+    },
+    {
+      "region_code": "360728",
+      "county": "定南县",
+      "pop_2024": 208500.0,
+      "pop_2025": 209700.0,
+      "delta_people": 1200.0,
+      "change_rate": 0.0057553956834532375,
+      "urbanization_2024": 66.9,
+      "urbanization_2025": 68.13,
+      "urbanization_delta_pp": 1.2299999999999898
+    },
+    {
+      "region_code": "360729",
+      "county": "全南县",
+      "pop_2024": 168100.0,
+      "pop_2025": 168000.0,
+      "delta_people": -100.0,
+      "change_rate": -0.000594883997620464,
+      "urbanization_2024": 58.16,
+      "urbanization_2025": 59.53,
+      "urbanization_delta_pp": 1.3700000000000045
+    },
+    {
+      "region_code": "360730",
+      "county": "宁都县",
+      "pop_2024": 692900.0,
+      "pop_2025": 690500.0,
+      "delta_people": -2400.0,
+      "change_rate": -0.0034637032760860154,
+      "urbanization_2024": 52.58,
+      "urbanization_2025": 54.1,
+      "urbanization_delta_pp": 1.5200000000000031
+    },
+    {
+      "region_code": "360731",
+      "county": "于都县",
+      "pop_2024": 899600.0,
+      "pop_2025": 896200.0,
+      "delta_people": -3400.0,
+      "change_rate": -0.00377945753668297,
+      "urbanization_2024": 47.38,
+      "urbanization_2025": 48.9,
+      "urbanization_delta_pp": 1.519999999999996
+    },
+    {
+      "region_code": "360732",
+      "county": "兴国县",
+      "pop_2024": 709800.0,
+      "pop_2025": 706300.0,
+      "delta_people": -3500.0,
+      "change_rate": -0.004930966469428008,
+      "urbanization_2024": 48.75,
+      "urbanization_2025": 50.35,
+      "urbanization_delta_pp": 1.6000000000000014
+    },
+    {
+      "region_code": "360733",
+      "county": "会昌县",
+      "pop_2024": 449300.0,
+      "pop_2025": 450800.0,
+      "delta_people": 1500.0,
+      "change_rate": 0.0033385265969285557,
+      "urbanization_2024": 57.81,
+      "urbanization_2025": 59.23,
+      "urbanization_delta_pp": 1.4199999999999946
+    },
+    {
+      "region_code": "360734",
+      "county": "寻乌县",
+      "pop_2024": 279700.0,
+      "pop_2025": 279700.0,
+      "delta_people": 0.0,
+      "change_rate": 0.0,
+      "urbanization_2024": 54.24,
+      "urbanization_2025": 55.69,
+      "urbanization_delta_pp": 1.4499999999999957
+    },
+    {
+      "region_code": "360735",
+      "county": "石城县",
+      "pop_2024": 281200.0,
+      "pop_2025": 280500.0,
+      "delta_people": -700.0,
+      "change_rate": -0.0024893314366998577,
+      "urbanization_2024": 51.76,
+      "urbanization_2025": 53.34,
+      "urbanization_delta_pp": 1.5800000000000054
+    }
+  ],
+  "ganzhou_18_change_summary": {
+    "gain_count": 6,
+    "decline_count": 11,
+    "unchanged_count": 1,
+    "sum_2024": 8462400.0,
+    "sum_2025": 8451400.0,
+    "sum_delta": -11000.0
+  },
+  "jiangxi_population": {
+    "pop_2025": 44740000.0,
+    "pop_2024": 45020000.0,
+    "delta": -280000.0,
+    "natural_change": -89000.0,
+    "unexplained_residual": -191000.0
+  },
+  "jiangxi_wages": {
+    "nonprivate": 99446.0,
+    "private": 57223.0
+  },
+  "provident_city_unverified": [
+    {
+      "city": "南昌市",
+      "contributors_10000": 102.05,
+      "deposit_yi": 240.17,
+      "monthly_per_payer_proxy_yuan": 1961.2,
+      "status": "B_分市图片转录待逐行终核"
+    },
+    {
+      "city": "新余市",
+      "contributors_10000": 10.87,
+      "deposit_yi": 24.92,
+      "monthly_per_payer_proxy_yuan": 1910.5,
+      "status": "B_分市图片转录待逐行终核"
+    },
+    {
+      "city": "上饶市",
+      "contributors_10000": 29.21,
+      "deposit_yi": 66.05,
+      "monthly_per_payer_proxy_yuan": 1884.3,
+      "status": "B_分市图片转录待逐行终核"
+    },
+    {
+      "city": "鹰潭市",
+      "contributors_10000": 8.09,
+      "deposit_yi": 17.57,
+      "monthly_per_payer_proxy_yuan": 1809.8,
+      "status": "B_分市图片转录待逐行终核"
+    },
+    {
+      "city": "萍乡市",
+      "contributors_10000": 12.62,
+      "deposit_yi": 26.26,
+      "monthly_per_payer_proxy_yuan": 1734.0,
+      "status": "B_分市图片转录待逐行终核"
+    },
+    {
+      "city": "景德镇市",
+      "contributors_10000": 12.98,
+      "deposit_yi": 26.58,
+      "monthly_per_payer_proxy_yuan": 1706.5,
+      "status": "B_分市图片转录待逐行终核"
+    },
+    {
+      "city": "九江市",
+      "contributors_10000": 33.66,
+      "deposit_yi": 66.0,
+      "monthly_per_payer_proxy_yuan": 1634.0,
+      "status": "B_分市图片转录待逐行终核"
+    },
+    {
+      "city": "抚州市",
+      "contributors_10000": 22.85,
+      "deposit_yi": 43.35,
+      "monthly_per_payer_proxy_yuan": 1581.0,
+      "status": "B_分市图片转录待逐行终核"
+    },
+    {
+      "city": "吉安市",
+      "contributors_10000": 29.29,
+      "deposit_yi": 55.28,
+      "monthly_per_payer_proxy_yuan": 1572.8,
+      "status": "B_分市图片转录待逐行终核"
+    },
+    {
+      "city": "宜春市",
+      "contributors_10000": 31.49,
+      "deposit_yi": 56.66,
+      "monthly_per_payer_proxy_yuan": 1499.4,
+      "status": "B_分市图片转录待逐行终核"
+    },
+    {
+      "city": "赣州市",
+      "contributors_10000": 60.66,
+      "deposit_yi": 105.68,
+      "monthly_per_payer_proxy_yuan": 1451.8,
+      "status": "B_分市图片转录待逐行终核"
+    }
+  ],
+  "source_conflicts": []
+}

@@ -26,6 +26,7 @@ jobs:
         run: |
           python -S scripts/analyze_urban_rural.py
           python -S scripts/test_urban_rural.py
+          python -S scripts/test_archive_sources.py
       - name: Publish derived population tables
         uses: actions/upload-artifact@v4
         with:

@@ -79,7 +79,7 @@
 
 ![赣州18县人口变化](figures/赣州18县人口增减.png)
 
-复现：`python -S scripts/prepare_data.py && python -S scripts/reproduce.py && python -S scripts/test_research.py`。新审计工作簿还需 `pip install requests beautifulsoup4 openpyxl`，随后运行 `python scripts/archive_sources.py && python scripts/audit_snapshots.py && python scripts/build_audited_workbook.py`。网页会变动，已归档快照与哈希用于固定本次证据版本。旧31表Excel仍依赖非通用 `artifact_tool`，作为阶段档案保留。
+复现：`python -S scripts/prepare_data.py && python -S scripts/reproduce.py && python -S scripts/test_research.py`。其中 `prepare_data.py` 现在只检查已提交的CSV（不会重写原始记录）。新审计工作簿还需 `pip install requests beautifulsoup4 openpyxl`，随后运行 `python scripts/archive_sources.py && python scripts/audit_snapshots.py && python scripts/build_audited_workbook.py`。网页会变动，已归档快照与哈希用于固定本次证据版本。旧31表Excel仍依赖非通用 `artifact_tool`，作为阶段档案保留。
 
 详见 [研究路线与验收](docs/roadmap.md)、[证据政策](docs/evidence-policy.md)、[核验缺口](docs/data-gaps.md)。
 

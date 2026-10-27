@@ -56,7 +56,7 @@ def lexical(ind):
     if ind.startswith("social_insurance_"):
         return ["社会保险基金","社保基金"]
     if ind.startswith("pension_"):
-        return PENSION_CUES.get(ind.rsplit("_",2)[-1], [])
+        return next((terms for suffix,terms in PENSION_CUES.items() if ind.endswith("_"+suffix)), [])
     return LEXICAL.get(ind, [])
 
 def normalize(txt):

@@ -99,3 +99,5 @@
 - `scripts/review_semantic_evidence.py`：对65条历史“仅数字命中”添加指标词和制度归属上下文候选；**全部待人工复核，不自动签核**。
 - `scripts/build_audited_workbook.py`：在11表原工作簿上增加基金、政策、覆盖和证据候选等工作表；完整新版工作簿可从最新GitHub Actions的`source-evidence-audit` Artifact下载。
 - CI新增对应测试，确保基金与待遇不混账、县级未知标准不被填充、弱证据不被升格为人工验证。
+
+- [官方汇总资料申请模板及边界](docs/public_aggregation_data_request_template.md)：100县逐地缺口和待采集指标可由CI重建，默认全部未提交、未收到答复，不虚构政府回应。

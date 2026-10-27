@@ -52,6 +52,8 @@ jobs:
           python scripts/audit_snapshots.py
           python scripts/review_semantic_evidence.py
           python scripts/test_semantic_evidence.py
+          python scripts/build_resident_policy_coverage.py
+          python scripts/test_2025_county_fund_policy.py
           python scripts/build_audited_workbook.py
           python scripts/test_source_audit.py
       - name: Audit table is reproducible from committed snapshots

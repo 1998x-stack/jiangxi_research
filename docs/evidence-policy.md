@@ -34,3 +34,7 @@
 - 旧版`Sxx.html`平铺存档仍有效，不迁移或删除它们；新写入版本可与原版并存。
 - `audit_snapshots.py`和`test_source_audit.py`使用已登记的本地快照完全离线复核，不能把简单的`numeric_token_present`当作语义已验证。
 - CI中的`evidence-audit`专用作业验证文件哈希、逐条审计和Excel重建，不访问外部政府网站。
+
+## 原始资料人工转录的维护方式
+
+`data/observations_reviewed.csv`、`data/sources.csv` 是 Git 跟踪的规范数据文件。`python scripts/prepare_data.py` 现在**只校验、绝不改写**，避免脚本中的旧常量覆盖研究人员修正后的事实。每次修改观察值应一并更新 `source_id`、引用定位、语义复核状态；随后运行复算、来源审计和CI，提交可审查的差异。旧版硬编码生成脚本可在Git历史中查阅，但不再是数据事实的来源。

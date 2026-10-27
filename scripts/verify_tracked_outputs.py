@@ -29,7 +29,11 @@ for rel in CSV_FILES:
 for rel in JSON_FILES:
     actual = json.loads((ROOT / rel).read_text(encoding='utf-8-sig'))
     old = json.loads(committed_bytes(rel).decode('utf-8-sig'))
-    assert old == actual, f'JSON metrics changed: {rel}'
+    if old != actual:
+        for k in old:
+            if old[k] != actual.get(k):
+                print('DIFF_KEY', k, 'original=', str(old[k])[:400], 'regenerated=', str(actual.get(k))[:400])
+        raise AssertionError(f'JSON metrics changed: {rel}')
 
 for rel in TEXT_FILES:
     actual = (ROOT / rel).read_text(encoding='utf-8-sig').strip()
